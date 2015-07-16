@@ -51,9 +51,8 @@ Because of this, you will need to run `./node_modules/.bin/electron-rebuild` eve
 Electrometeor takes advatage of [ShellJS](https://github.com/arturadib/shelljs) to make writing cross-platform bash scripts easier (or `.bat` for you Windows folks). Once you've installed the npm dependencies, you can run the setup script with node.
 
 ```npm run setup``` 
-or ```
-node ./script/setup.js
-```
+or 
+```node ./script/setup.js```
 
 When that's all done, you can run the app locally with the following command:
 ```node ./script/run.js``` or simply use ```npm start```
