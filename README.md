@@ -1,11 +1,25 @@
-# Electrometeor
+# Electrometeor [Reloaded] Starter Kit
+
+### Electron + Meteor + angular-meteor + less + ionic styles + ionicons
+
+<br/>
 ## Overview
-Electrometeor combines **[Electron](http://electron.atom.io)** and **[Meteor](http://www.meteor.com)** to allow you to easily create desktop applications that work both 100% offline & online.
+**[Electrometeor](https://github.com/sircharleswatson/Electrometeor)** combines **[Electron](http://electron.atom.io)** and **[Meteor](http://www.meteor.com)** to allow you to easily create desktop applications that work both 100% offline & online.
+
+This **Starter Kit** improves the original **[Electrometeor](https://github.com/sircharleswatson/Electrometeor)** project by [Charles Watson](https://github.com/sircharleswatson) with some additions like:
+
+* __angular-meteor__ (__*meteor package*__ [urigo:angular](https://atmospherejs.com/urigo/angular)), allowing you to use AngularJS for rapid prototyping your ideas.
+* __less__ as your stylesheets preprocessor (__*meteor package*__ [less](https://atmospherejs.com/meteor/less))
+* __ionic framework css styles__, [visit ionicframework website](http://ionicframework.com/). I've just boundled final **ionic.css** file and the [ionicons](http://ionicons.com/) fonts.
+* **Some custom styles and application logic to illustrate the magic.**
+
+
+
 
 ## Getting Started
 #### Prerequisites
 ##### Mac & Linux
-* None
+* `NPM` download and install it from [nodejs.org](https://nodejs.org/)
 
 
 ##### Windows
@@ -18,7 +32,7 @@ Electrometeor combines **[Electron](http://electron.atom.io)** and **[Meteor](ht
 
 In order to get started, you'll need to clone this repo to `<your-app>` and run `npm install`
 ```sh
-$ git clone git@github.com:sircharleswatson/Electrometeor.git <your-app>
+$ git clone git@github.com:trikanna/electron-angular-meteor-ionic-starter-kit.git <your-app>
 $ cd <your-app>
 $ npm install
 ```
@@ -32,14 +46,14 @@ Because of this, you will need to run `./node_modules/.bin/electron-rebuild` eve
 
 Electrometeor takes advatage of [ShellJS](https://github.com/arturadib/shelljs) to make writing cross-platform bash scripts easier (or `.bat` for you Windows folks). Once you've installed the npm dependencies, you can run the setup script with node.
 
-```sh
-$ node ./script/setup.js
+```npm run setup``` 
+or ```
+node ./script/setup.js
 ```
 
 When that's all done, you can run the app locally with the following command:
-```sh
-$ node ./script/run.js
-```
+```node ./script/run.js``` or simply use ```npm start```
+
 
 #### Developing your Meteor application
 
@@ -50,7 +64,7 @@ Development of your Meteor application is pretty much the same as usual. There a
 #### Deploying your Meteor application
 ##### Mac & Linux
 
-When you're ready, you can build your app for distribution by running `node ./script/dist.js`.
+When you're ready, you can build your app for distribution by running ```npm run dist``` or `node ./script/dist.js`.
 
 ##### Windows
 
