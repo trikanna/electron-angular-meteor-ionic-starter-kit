@@ -1,0 +1,6 @@
+node_modules/*
+resources/*
+cache
+dist
+.idea
+.DS_Store

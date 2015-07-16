@@ -1,0 +1,18 @@
+{
+  "name": "electron-angular-meteor",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts":{
+    "setup" : "node ./script/setup.js",
+    "start"   : "node ./script/run.js",
+    "dist"  : "node ./script/dist.js"
+  },
+  "devDependencies": {
+    "adm-zip": "^0.4.7",
+    "electron-rebuild": "^0.1.4",
+    "shelljs": "^0.4.0"
+  },
+  "optionalDependencies": {
+    "eslint": "^0.20.0"
+  }
+}

@@ -1,0 +1,139 @@
+/* CSS declarations go here */
+
+@theme-color-base : #f1f1f1;
+@theme-line-color : darken(@theme-color-base, 10%);
+
+body, html{
+  background: transparent;
+  margin: 0;
+  height: 100%;
+}
+
+.application-wrapper {
+  background: white;
+  width: ~"calc(100% + 2px)";
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .container{
+    padding:0;
+    height: ~"calc(100% - 58px)";
+  }
+
+  .breadcrum{
+    padding: 0 8px;
+    height: 20px;
+    background: white;
+    border-bottom: 1px solid #eee;
+  }
+
+  .status-area{
+    background: @theme-color-base;
+    border-top: 1px solid @theme-line-color;
+    height: 20px;
+    line-height: 18px;
+    text-shadow: 1px 1px white;
+    position: absolute;
+    left:  0;
+    right: 0;
+    bottom: 0;
+    font-size: 11px;
+    padding: 0 8px;
+    color: darken(@theme-color-base, 20%);
+  }
+
+  header{
+    background: @theme-color-base;
+
+    width: 100%;
+    height: 38px;
+    overflow: hidden;
+    line-height: 39px;
+    padding: 0 10px;
+    border-bottom: 1px solid  @theme-line-color;
+
+    &.yosemite{
+      // you can have the native yosemite look n feel with this background image.
+      background: #fff url("images/header-bg") repeat-x top;
+      border-bottom: 1px solid  darken(@theme-line-color, 15%);
+
+      .controls{
+        border-right: 1px solid darken(@theme-line-color, 11%);
+      }
+    }
+
+    .controls{
+      width: 189px;
+    }
+
+    .extra{
+      float: left;
+      width: ~"calc(100% - 189px)";
+      height: 38px;
+      overflow: hidden;
+      line-height: 40px;
+
+      .row{
+        padding: 0 5px;
+        height: 37px;
+
+        .col{
+          padding: 0;
+          line-height: 36px;
+
+          button{
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+
+    a{
+      display: inline-block;
+      margin-right: 4px;
+      width:  12px;
+      height: 12px;
+      text-align: center;
+      line-height: 10px;
+      overflow: hidden;
+      border-radius: 50%;
+      text-indent: -9999px;
+      &:nth-child(1){ background: #fc615c; }
+      &:nth-child(2){ background: #fdbc40; }
+      &:nth-child(3){ background: #34c748; }
+    }
+  }
+
+  .left-panel{
+    background: white;
+    width: 199px;
+    height: 100%;
+    border-right: 1px solid @theme-line-color;
+    background: @theme-color-base;
+  }
+  .list-panel{
+    background: #fcfcfc;
+    width: 299px;
+    height: 100%;
+    border-right: 1px solid @theme-line-color;
+    overflow-y: auto;
+  }
+  .detail-panel{
+    background: white;
+    height: 100%;
+    width: ~"calc(100% - 500px)";
+  }
+
+}
+
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+
+
+ul.list{
+  overflow-x: hidden;
+
+  .item:first-child{ border-top-color: white;}
+}
