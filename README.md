@@ -13,7 +13,11 @@ This **Starter Kit** improves the original **[Electrometeor](https://github.com/
 * __ionic framework css styles__, [visit ionicframework website](http://ionicframework.com/). I've just boundled final **ionic.css** file and the [ionicons](http://ionicons.com/) fonts.
 * **Some custom styles and application logic to illustrate the magic.**
 
+##### Base Theme
+![theme-white](https://github.com/trikanna/electron-angular-meteor-ionic-starter-kit/blob/master/docs/theme-white.png)
 
+##### Yosemite Theme
+![theme-yosemite](https://github.com/trikanna/electron-angular-meteor-ionic-starter-kit/blob/master/docs/theme-yosemite.png)
 
 
 ## Getting Started
